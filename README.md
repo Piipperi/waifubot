@@ -10,7 +10,7 @@ Q: Is this code free to use?
 A: Yes it is.
 
 Q: Who made this?
-A: I, Piipperi did by copying random code all over the internet
+A: I, Piipperi did by copying random code all over the internet.
 
 Q: What if I encounter an issue?
 A: If it's a fatal crash, I'd highly suggest seeing if you can fix it yourself by looking at the console and checking what's causing the error. If it's not a user fault, you should file an issue report about it. For other issues, you can also file issue report about them, but if they're not something I can really test from my end, I may not be able to help much.
