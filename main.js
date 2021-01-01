@@ -27,38 +27,38 @@ client.on('message', message => {
         console.log(`Message "${message.content}" sent by ${message.author.tag} in server "${message.guild}" on #${message.channel.name}`);
         responseMessage = `I love you too, ${message.author}.`
         message.channel.send(responseMessage);
-        console.log(`Responded to command with "${responseMessage}"`);
+        console.log(`Responded to message with "${responseMessage}"`);
 
     }
 
     if(iLoveYou && message.channel.type === 'dm') {
         if(message.author.bot) return;
-        console.log(`${dateTime}    Direct message received`);
+        console.log(`Direct message received`);
         responseMessage = `I love you too`;
         message.channel.send(responseMessage);
-        console.log(`${dateTime}    Responded to direct message`);
+        console.log(`Responded to direct message`);
     }
 
     // Morning
-    const morning = msgLowerCase.includes("gm") || msgLowerCase.includes("morning") || msgLowerCase.includes("huomenta");
+    const morning = msgLowerCase.includes("gm") || msgLowerCase.includes("morning");
 
     if(morning && message.channel.type === 'dm') {
         if(message.author.bot) return;
-        console.log(`${dateTime}    Direct message received`);
-        responseMessage = `Good morning, master`;
+        console.log(`Direct message received`);
+        responseMessage = `Good morning`;
         message.channel.send(responseMessage);
-        console.log(`${dateTime}    Responded to direct message`);
+        console.log(`Responded to direct message`);
     }
 
     // Night
-    const night = msgLowerCase.includes("gn") || msgLowerCase.includes("night") || msgLowerCase.includes("öitä")
+    const night = msgLowerCase.includes("gn") || msgLowerCase.includes("night");
 
     if(night && message.channel.type === 'dm') {
         if(message.author.bot) return;
-        console.log(`${dateTime}    Direct message received`);
-        responseMessage = `Good night *hugs*`;
+        console.log(`Direct message received`);
+        responseMessage = `Good night`;
         message.channel.send(responseMessage);
-        console.log(`${dateTime}    Responded to direct message`);
+        console.log(`Responded to direct message`);
     }
 
 });
